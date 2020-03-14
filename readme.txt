@@ -25,5 +25,5 @@
  .Nao e necessario criar massas por enquanto.
 
 6.App
- .O app e de terceiro, provavelmente você notara alguns problemas com identificadores de elementos, caso execute com sucesso ou não, recomento que após entender o 
-código escrito, instale outro arquivo.ipa
+ .O app e de terceiro, provavelmente você notara alguns problemas com identificadores de elementos, caso execute com sucesso ou não, recomendo que após entender o 
+código escrito, instale outro arquivo.ipa. Antes de executar, leia instruções sobre o Apple ID e WebDriverAgent.
