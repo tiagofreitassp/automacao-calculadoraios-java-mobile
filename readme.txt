@@ -11,7 +11,7 @@
   com as versoes estaveis).
 
 2.Configuracoes:
- .O projeto foi criado no MacOS, não e para ser executado no Windows e no Linux.
+ .O projeto foi criado no MacOS, não e para ser executado no Windows e no Linux. Automação com iOS so podem ser feitas na plataforma com o MacOS.
  .Os metodos para criar o driver Mobile estao na classe EmuladorDriver e MobileDriver
 
 3.Execucao:
@@ -25,5 +25,5 @@
  .Nao e necessario criar massas por enquanto.
 
 6.App
- .O app e de terceiro, provavelmente você notara alguns problemas com identificadores de elementos, caso execute com sucesso ou não, recomento que após entender
-  O código, instale outro arquivo.ipa
+ .O app e de terceiro, provavelmente você notara alguns problemas com identificadores de elementos, caso execute com sucesso ou não, recomento que após entender o 
+código escrito, instale outro arquivo.ipa
