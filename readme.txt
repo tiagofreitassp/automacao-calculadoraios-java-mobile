@@ -1,4 +1,4 @@
-=== Automacao de calculos na Calculadora do Android ===
+=== Automacao de calculos na Calculadora do iOS ===
 
 0.Objetivo
  .Realizar calculos basicos na calculadora do iOS no smartphone
@@ -26,4 +26,5 @@
 
 6.App
  .O app e de terceiro, provavelmente você notara alguns problemas com identificadores de elementos, caso execute com sucesso ou não, recomendo que após entender o 
-código escrito, instale outro arquivo.ipa. Antes de executar, leia instruções sobre o Apple ID e WebDriverAgent.
+código escrito, instale outro arquivo.ipa. 
+ .Antes de executar, pesquise instruções sobre o Apple ID e WebDriverAgent.
