@@ -16,11 +16,11 @@ public class MobileDriver {
     private String xcodeSigningId = "iPhone Developer";
     private String udid = "d5617a78258a367601161ebf8347ba549c954eae";
     private String platformName = "iOS";
-    private String deviceName = "iPhone de Fabio";
+    private String deviceName = "iPhone de TF";
     private String platformVersion = "13.3.1";
     private String bundleId = "com.TiagoFreitas.SimpleCalculator";
     private String automationName = "XCUITest";
-    private String driverApp = "/Users/auditeste/Documents/Workspaces_Tiago/XcodeProjects/Apps/Payload.ipa";
+    private String driverApp = "/Users/testador/Documents/Workspaces_Tiago/XcodeProjects/Apps/Payload.ipa";
 
     public AppiumDriver<MobileElement> getDriver() throws MalformedURLException {
         if(driver == null) {

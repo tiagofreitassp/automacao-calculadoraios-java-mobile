@@ -1,7 +1,7 @@
 === Automacao de calculos na Calculadora do iOS ===
 
 0.Objetivo
- .Realizar calculos basicos na calculadora do iOS no smartphone
+ .Realizar calculos basicos na calculadora do iOS.
 
 1.Requisitos:
  .Os drivers devem estar na pasta drivers
@@ -25,6 +25,6 @@
  .Nao e necessario criar massas por enquanto.
 
 6.App
- .O app e de terceiro, provavelmente você notara alguns problemas com identificadores de elementos, caso execute com sucesso ou não, recomendo que após entender o 
-código escrito, instale outro arquivo.ipa. 
- .Antes de executar, pesquise instruções sobre o Apple ID e WebDriverAgent.
+ .O app da calculadora do iOS utilizado para o teste deste projeto foi desenvolvido por terceiro e não por mim, provavelmente você notara possiveis problemas com identificadores 
+  de elementos, caso execute com sucesso ou não, recomendo que após entender o código escrito, instale outro arquivo do formato .ipa e adapte o projeto. 
+ .Antes de executar, espero que saiba de instruções sobre o Apple ID e WebDriverAgent, são exigências para automação nas plataformas da Apple.
