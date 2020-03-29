@@ -12,15 +12,14 @@ import java.net.URL;
 
 public class MobileDriver {
     protected static AppiumDriver<MobileElement>driver;
-    private String xcodeOrgId = "3P3JYXL37U";
-    private String xcodeSigningId = "iPhone Developer";
-    private String udid = "d5617a78258a367601161ebf8347ba549c954eae";
+    private String xcodeSigningId = "iPhone 8 Plus";
+    private String udid = "1ac1b2904df1922053361fdb6b3044d649e3d5fd";
     private String platformName = "iOS";
-    private String deviceName = "iPhone de TF";
-    private String platformVersion = "13.3.1";
+    private String deviceName = "iPhone de Tiago";
+    private String platformVersion = "13.4";
     private String bundleId = "com.TiagoFreitas.SimpleCalculator";
     private String automationName = "XCUITest";
-    private String driverApp = "/Users/testador/Documents/Workspaces_Tiago/XcodeProjects/Apps/Payload.ipa";
+    private String driverApp = "/Users/arlequim/Documents/Scripts programacao/XcodeProjects/Apps/Payload.ipa";
 
     public AppiumDriver<MobileElement> getDriver() throws MalformedURLException {
         if(driver == null) {
@@ -32,7 +31,6 @@ public class MobileDriver {
     @Before
     public void criarDriverSmartphone() throws MalformedURLException {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-        desiredCapabilities.setCapability("xcodeOrgId", xcodeOrgId);
         desiredCapabilities.setCapability("xcodeSigningId", xcodeSigningId);
         desiredCapabilities.setCapability("udid", udid);
         desiredCapabilities.setCapability("platformName", platformName);
@@ -54,7 +52,7 @@ public class MobileDriver {
     }
 
     public static void versaoApp() {
-        System.out.println("<<< Tiago Freitas - Versao: 1.0.140320 >>>");
-        System.out.println("<<< Versao da plataforma iOS: 13.3.1 >>>");
+        System.out.println("<<< Tiago Freitas - Versao: 1.1.280320 >>>");
+        System.out.println("<<< Versao da plataforma iOS: 13.4 >>>");
     }
 }

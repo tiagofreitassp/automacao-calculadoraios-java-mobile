@@ -1,4 +1,4 @@
-=== Automacao de calculos na Calculadora do iOS ===
+=== Automacao de calculos no iOS ===
 
 0.Objetivo
  .Realizar calculos basicos na calculadora do iOS.
@@ -6,7 +6,7 @@
 1.Requisitos:
  .Os drivers devem estar na pasta drivers
  .Java JDK 8
- .Intellij Idea ou Eclipse IDE
+ .Intellij Idea, Eclipse IDE, Visual Studio Code
  .Dependencias Maven (Ja estao inseridas no arquivo pom.xml pronto para serem baixadas ao importar na IDE
   com as versoes estaveis).
 
@@ -16,7 +16,7 @@
 
 3.Execucao:
  .Abrir uma das classes ***Test.java no Intellij Idea ou no Eclipse
- .No caso para executar num smartphone, abra a classe Mobile Driver e altere os valores das variáveis
+ .Para executar num smartphone/simulador, abra a classe Mobile Driver e altere os valores das variáveis
 
 4.Evidencias:
  .Apos a execucao as imagens de evidencias sao armazenadas na pasta screenshots.
@@ -27,4 +27,4 @@
 6.App
  .O app da calculadora do iOS utilizado para o teste deste projeto foi desenvolvido por terceiro e não por mim, provavelmente você notara possiveis problemas com identificadores 
   de elementos, caso execute com sucesso ou não, recomendo que após entender o código escrito, instale outro arquivo do formato .ipa e adapte o projeto. 
- .Antes de executar, espero que saiba de instruções sobre o Apple ID e WebDriverAgent, são exigências para automação nas plataformas da Apple.
+ .Antes de executar, espero que saiba de instruções sobre o Apple ID, WebDriverAgent, Node, Appium e dependencias no MacOS, são exigências para automação nas plataformas da Apple.
