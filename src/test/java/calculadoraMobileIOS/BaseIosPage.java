@@ -15,9 +15,10 @@ public class BaseIosPage extends MobileDriver{
         getDriver().findElement(by).click();
     }
 
-    public void validarTexto(By by, String texto) throws MalformedURLException {
+    public void validarTexto(By by, String texto) throws MalformedURLException, InterruptedException {
         aguardarElemento(by);
         Assert.assertEquals(texto, obterTexto(by));
+        Thread.sleep(1000);
     }
 
     public String obterTexto(By by) throws MalformedURLException {

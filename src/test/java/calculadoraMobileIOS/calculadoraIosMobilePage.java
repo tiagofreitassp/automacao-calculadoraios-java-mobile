@@ -9,38 +9,39 @@ public class calculadoraIosMobilePage extends MobileDriver {
     BaseIosTest test = new BaseIosTest();
     BaseIosPage page = new BaseIosPage();
 
-    private String btnC = "//XCUIElementTypeButton[@name=\"C\"]";
-    private String btnMailMenos = "//XCUIElementTypeButton[@name=\"+/-\"]";
-    private String btnPorcentagem = "//XCUIElementTypeButton[@name=\"%\"]";
-    private String btnDivisao = "//XCUIElementTypeButton[@name=\"/\"]";
-    private String btnSete = "//XCUIElementTypeButton[@name=\"7\"]";
-    private String btnOito = "//XCUIElementTypeButton[@name=\"8\"]\n";
-    private String btnNove = "//XCUIElementTypeButton[@name=\"9\"]";
-    private String btnQuatro = "//XCUIElementTypeButton[@name=\"4\"]";
-    private String btnCinco = "//XCUIElementTypeButton[@name=\"5\"]\n";
-    private String btnSeis = "//XCUIElementTypeButton[@name=\"6\"]";
-    private String btnUm = "//XCUIElementTypeButton[@name=\"1\"]";
-    private String btnDois = "//XCUIElementTypeButton[@name=\"2\"]\n";
-    private String btnTres = "//XCUIElementTypeButton[@name=\"3\"]\n";
-    private String btnZeroZero = "//XCUIElementTypeButton[@name=\"00\"]";
-    private String btnZero = "//XCUIElementTypeButton[@name=\"0\"]\n";
-    private String btnPonto = "//XCUIElementTypeButton[@name=\".\"]";
-    private String btnIgual = "//XCUIElementTypeButton[@name=\"=\"]";
-    private String btnSoma = "//XCUIElementTypeButton[@name=\"+\"]";
-    private String btnSubtrair = "//XCUIElementTypeButton[@name=\"-\"]";
-    private String btnMultiplicar = "//XCUIElementTypeButton[@name=\"*\"]\n";
+    private String btnC = "btnC";
+    private String btnMailMenos = "btnMailMenos";
+    private String btnPorcentagem = "btnPorcentagem";
+    private String btnDivisao = "btnDivisao";
+    private String btnSete = "btnSete";
+    private String btnOito = "btnOito";
+    private String btnNove = "btnNove";
+    private String btnQuatro = "btnQuatro";
+    private String btnCinco = "btnCinco";
+    private String btnSeis = "btnSeis";
+    private String btnUm = "btnUm";
+    private String btnDois = "btnDois";
+    private String btnTres = "btnTres";
+    private String btnZeroZero = "btnZeroZero";
+    private String btnZero = "btnZero";
+    private String btnPonto = "btnPonto";
+    private String btnIgual = "btnIgual";
+    private String btnSoma = "btnAdicao";
+    private String btnSubtrair = "btnSubtracao";
+    private String btnMultiplicar = "btnMultiplicacao";
 
-    //private String txtResultado = "";//A calculadora nao tem identificador, necessario um arquivo com id
+    private String txtResultado = "lblResultado";
 
     public void soma() throws IOException, InterruptedException, InvalidFormatException {
         System.out.println("Soma");
         test.criarPastaEvidencia("Calc iOS - Soma");
 
-        page.clicar(By.xpath(btnDois));
-        page.clicar(By.xpath(btnSoma));
-        page.clicar(By.xpath(btnTres));
+        page.clicar(By.id(btnDois));
+        page.clicar(By.id(btnSoma));
+        page.clicar(By.id(btnTres));
         test.gerarScreenshots("Soma1");
-        page.clicar(By.xpath(btnIgual));
+        page.validarTexto(By.id(txtResultado),"5");
+        page.clicar(By.id(btnIgual));
         test.gerarScreenshots("Soma2");
 
         page.esperar(1000);
@@ -51,11 +52,12 @@ public class calculadoraIosMobilePage extends MobileDriver {
         System.out.println("Subtracao");
         test.criarPastaEvidencia("Calc iOS - Subtracao");
 
-        page.clicar(By.xpath(btnNove));
-        page.clicar(By.xpath(btnSubtrair));
-        page.clicar(By.xpath(btnQuatro));
+        page.clicar(By.id(btnNove));
+        page.clicar(By.id(btnSubtrair));
+        page.clicar(By.id(btnQuatro));
         test.gerarScreenshots("Subtracao1");
-        page.clicar(By.xpath(btnIgual));
+        page.validarTexto(By.id(txtResultado),"5");
+        page.clicar(By.id(btnIgual));
         test.gerarScreenshots("Subtracao2");
 
         page.esperar(1000);
@@ -66,11 +68,12 @@ public class calculadoraIosMobilePage extends MobileDriver {
         System.out.println("Multiplicacao");
         test.criarPastaEvidencia("Calc iOS - Multiplicacao");
 
-        page.clicar(By.xpath(btnOito));
-        page.clicar(By.xpath(btnMultiplicar));
-        page.clicar(By.xpath(btnSete));
+        page.clicar(By.id(btnOito));
+        page.clicar(By.id(btnMultiplicar));
+        page.clicar(By.id(btnSete));
         test.gerarScreenshots("Multiplicacao1");
-        page.clicar(By.xpath(btnIgual));
+        page.validarTexto(By.id(txtResultado),"56");
+        page.clicar(By.id(btnIgual));
         test.gerarScreenshots("Multiplicacao2");
 
         page.esperar(1000);
@@ -81,12 +84,13 @@ public class calculadoraIosMobilePage extends MobileDriver {
         System.out.println("Divisao");
         test.criarPastaEvidencia("Calc iOS - Divisao");
 
-        page.clicar(By.xpath(btnTres));
-        page.clicar(By.xpath(btnDois));
-        page.clicar(By.xpath(btnDivisao));
-        page.clicar(By.xpath(btnDois));
+        page.clicar(By.id(btnTres));
+        page.clicar(By.id(btnDois));
+        page.clicar(By.id(btnDivisao));
+        page.clicar(By.id(btnDois));
         test.gerarScreenshots("Divisao1");
-        page.clicar(By.xpath(btnIgual));
+        page.validarTexto(By.id(txtResultado),"16");
+        page.clicar(By.id(btnIgual));
         test.gerarScreenshots("Divisao2");
 
         page.esperar(1000);
