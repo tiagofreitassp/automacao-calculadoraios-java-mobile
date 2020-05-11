@@ -103,8 +103,8 @@ public class BaseIosTest extends MobileDriver {
             run3.addBreak();
             is.close();
 
-            String dWin = pastaEvidencias + "\\" + "ID - " + id + " - " + titulo +".doc";;
-            String dMac = pastaEvidencias + "/" + "ID - " + id + " - " + titulo +".doc";
+            String dWin = pastaEvidencias + "\\" + "ID - " + id + " - " + titulo +".docx";;
+            String dMac = pastaEvidencias + "/" + "ID - " + id + " - " + titulo +".docx";
             String pDocumento = dMac;
 
             String documento = pDocumento;

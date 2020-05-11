@@ -11,7 +11,7 @@
   com as versoes estaveis).
 
 2.Configuracoes:
- .O projeto foi criado no MacOS, não e para ser executado no Windows e no Linux. Automação com iOS so podem ser feitas na plataforma com o MacOS.
+ .O projeto foi criado no MacOS, não e para ser executado no Windows e no Linux. Automacoes com iOS so podem ser feitas na plataforma com o MacOS.
  .Os metodos para criar o driver Mobile estao na classe EmuladorDriver e MobileDriver
 
 3.Execucao:
@@ -27,4 +27,5 @@
 6.App
  .O app da calculadora do iOS utilizado para o teste deste projeto foi desenvolvido por terceiro e não por mim, provavelmente você notara possiveis problemas com identificadores 
   de elementos, caso execute com sucesso ou não, recomendo que após entender o código escrito, instale outro arquivo do formato .ipa e adapte o projeto. 
+ .Mas deixei o codigo fonte (SimpleCalculator-master.zip) na pasta drivers/iOS caso tenha problemas com o BundleId, abra o codigo fonte e altere o BundleId na sua conta Apple ID.
  .Antes de executar, espero que saiba de instruções sobre o Apple ID, WebDriverAgent, Node, Appium e dependencias no MacOS, são exigências para automação nas plataformas da Apple.
