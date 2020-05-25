@@ -67,7 +67,7 @@ public class BaseIosTest extends MobileDriver {
         XWPFRun run2 = par.createRun();
         XWPFRun run3 = par.createRun();
 
-        run1.setText("ID" + String.valueOf(id) + "-");
+        run1.setText("ID " + String.valueOf(id) + "-");
         run1.setText(cenario);
         run1.setFontSize(11);
         run1.setColor("595959");

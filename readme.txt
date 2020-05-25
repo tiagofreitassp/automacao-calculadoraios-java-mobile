@@ -22,10 +22,10 @@
  .Apos a execucao as imagens de evidencias sao armazenadas na pasta screenshots.
 
 5.Massas:
- .Nao e necessario criar massas por enquanto.
+ .Nao e necessario criar massas.
 
 6.App
- .O app da calculadora do iOS utilizado para o teste deste projeto foi desenvolvido por terceiro e não por mim, provavelmente você notara possiveis problemas com identificadores 
-  de elementos, caso execute com sucesso ou não, recomendo que após entender o código escrito, instale outro arquivo do formato .ipa e adapte o projeto. 
+ .O app da calculadora do iOS utilizado para o teste deste projeto foi desenvolvido por terceiro e não por mim, caso execute com sucesso ou não, recomendo que após entender o 
+ código escrito, instale outro arquivo do formato .ipa e adapte o projeto. 
  .Mas deixei o codigo fonte (SimpleCalculator-master.zip) na pasta drivers/iOS caso tenha problemas com o BundleId, abra o codigo fonte e altere o BundleId na sua conta Apple ID.
  .Antes de executar, espero que saiba de instruções sobre o Apple ID, WebDriverAgent, Node, Appium e dependencias no MacOS, são exigências para automação nas plataformas da Apple.

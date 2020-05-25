@@ -3,7 +3,6 @@ package calculadoraMobileIOS;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.remote.MobileCapabilityType;
 import org.junit.Before;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -17,10 +16,10 @@ public class MobileDriver {
     private String udid = "1ac1b2904df1922053361fdb6b3044d649e3d5fd";
     private String platformName = "iOS";
     private String deviceName = "TF-TysonSagan";
-    private String platformVersion = "13.4.1";
+    private String platformVersion = "13.5";
     private String bundleId = "com.TiagoFreitas.SimpleCalculator";
     private String automationName = "XCUITest";
-    private String driverApp = "/Users/user/Documents/Scripts programacao/XcodeProjects/Apps/Payload.ipa";
+    private String driverApp = "/Users/usuario/Documents/Scripts programacao/XcodeProjects/Apps/SimpleCalculator.ipa";
 
     public AppiumDriver<MobileElement> getDriver() throws MalformedURLException {
         if(driver == null) {
@@ -58,7 +57,7 @@ public class MobileDriver {
     }
 
     public static void versaoApp() {
-        System.out.println("<<< Tiago Freitas - Versao: 1.1.280320 >>>");
-        System.out.println("<<< Versao da plataforma iOS: 13.4.1 >>>");
+        System.out.println("<<< Tiago Freitas - Versao: 1.2.250520 >>>");
+        System.out.println("<<< Versao da plataforma iOS: 13.5 >>>");
     }
 }

@@ -87,11 +87,18 @@ public class calculadoraIosMobilePage extends MobileDriver {
         page.clicar(By.id(btnTres));
         page.clicar(By.id(btnDois));
         page.clicar(By.id(btnDivisao));
-        page.clicar(By.id(btnDois));
+        page.clicar(By.id(btnZero));
+        page.validarTexto(By.id(txtResultado),"inf");
         test.gerarScreenshots("Divisao1");
+        page.clicar(By.id(btnC));
+
+        page.clicar(By.id(btnTres));
+        page.clicar(By.id(btnDois));
+        page.clicar(By.id(btnDivisao));
+        page.clicar(By.id(btnDois));
+        test.gerarScreenshots("Divisao2");
         page.validarTexto(By.id(txtResultado),"16");
         page.clicar(By.id(btnIgual));
-        test.gerarScreenshots("Divisao2");
 
         page.esperar(1000);
         test.gerarEvidenciaNoWord("Validar divisao","4","Realizar uma divisao");
