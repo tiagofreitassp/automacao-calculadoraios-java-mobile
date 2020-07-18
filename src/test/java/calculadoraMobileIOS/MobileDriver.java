@@ -11,36 +11,54 @@ import java.net.URL;
 
 public class MobileDriver {
     protected static AppiumDriver<MobileElement>driver;
-    private String xcodeOrgId = "3P3JYXL37U";
-    private String xcodeSigningId = "iPhone 8 Plus";
-    private String udid = "1ac1b2904df1922053361fdb6b3044d649e3d5fd";
-    private String platformName = "iOS";
-    private String deviceName = "TF-TysonSagan";
-    private String platformVersion = "13.5";
-    private String bundleId = "com.TiagoFreitas.SimpleCalculator";
-    private String automationName = "XCUITest";
-    private String driverApp = "/Users/usuario/Documents/Scripts programacao/XcodeProjects/Apps/SimpleCalculator.ipa";
+    public String driverApp = "/Users/testador/Documents/Scripts programacao/XcodeProjects/Apps/SimpleCalculator.ipa";
 
     public AppiumDriver<MobileElement> getDriver() throws MalformedURLException {
         if(driver == null) {
-            criarDriverSmartphone();
+            criarDriver();
         }
         return driver;
     }
 
     @Before
+    public void criarDriver() throws MalformedURLException {
+        criarDriverSimulator();
+        //criarDriverSmartphone();
+    }
+
     public void criarDriverSmartphone() throws MalformedURLException {
         try{
             DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-            //desiredCapabilities.setCapability("xcodeOrgId", xcodeOrgId);
-            desiredCapabilities.setCapability("xcodeSigningId", xcodeSigningId);
-            desiredCapabilities.setCapability("udid", udid);
-            desiredCapabilities.setCapability("platformName", platformName);
-            desiredCapabilities.setCapability("deviceName", deviceName);
-            desiredCapabilities.setCapability("platformVersion", platformVersion);
-            desiredCapabilities.setCapability("bundleId", bundleId);
-            desiredCapabilities.setCapability("automationName", automationName);
+            //desiredCapabilities.setCapability("xcodeOrgId", "3P3JYXL37U");
+            desiredCapabilities.setCapability("xcodeSigningId", "iPhone 8 Plus");
+            desiredCapabilities.setCapability("udid", "1ac1b2904df1922053361fdb6b3044d649e3d5fd");
+            desiredCapabilities.setCapability("platformName", "iOS");
+            desiredCapabilities.setCapability("deviceName", "TF-Testador");
+            desiredCapabilities.setCapability("platformVersion", "13.5");
+            desiredCapabilities.setCapability("bundleId", "com.TiagoFreitas.SimpleCalculator");
+            desiredCapabilities.setCapability("automationName", "XCUITest");
             desiredCapabilities.setCapability("app", driverApp);
+
+            URL remoteUrl = new URL("http://localhost:4723/wd/hub");
+
+            driver = new IOSDriver(remoteUrl, desiredCapabilities);
+        }catch (Exception e){
+            e.getMessage();
+        }
+    }
+
+    public void criarDriverSimulator() throws MalformedURLException {
+        try{
+            DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+            //desiredCapabilities.setCapability("xcodeOrgId", xcodeOrgId);
+            desiredCapabilities.setCapability("xcodeSigningId", "iPhone 8 Plus");
+            desiredCapabilities.setCapability("udid", "3B6E62A9-5851-4FC9-A2D0-B2FE49A78A36");
+            desiredCapabilities.setCapability("platformName", "iOS");
+            desiredCapabilities.setCapability("deviceName", "iPhone 8 Plus");
+            desiredCapabilities.setCapability("platformVersion", "13.5");
+            desiredCapabilities.setCapability("bundleId", "com.TiagoFreitas.SimpleCalculator");
+            desiredCapabilities.setCapability("automationName", "XCUITest");
+            //desiredCapabilities.setCapability("app", driverApp);
 
             URL remoteUrl = new URL("http://localhost:4723/wd/hub");
 
@@ -57,7 +75,7 @@ public class MobileDriver {
     }
 
     public static void versaoApp() {
-        System.out.println("<<< Tiago Freitas - Versao: 1.2.250520 >>>");
+        System.out.println("<<< Tiago Freitas - Versao: 1.3.180720 >>>");
         System.out.println("<<< Versao da plataforma iOS: 13.5 >>>");
     }
 }
