@@ -46,7 +46,7 @@ Mas deixei o codigo fonte (SimpleCalculator-master.zip) na pasta drivers/iOS cas
 E obrigatorio voce ter conhecimento sobre o Apple ID, WebDriverAgent, Node, Appium e dependencias no MacOS, são exigências para automação nas plataformas da Apple.
 
 Se o seu Apple ID nao tiver perfil de desenvolvedor da Apple, voce tera problemas ao gerar um arquivo .ipa, e instala-lo no aparelho, recomendo abrir o projeto do codigo fonte da calculadora no Xcode e abri-lo 
-no Simulator para instala-lo sem precisar gerar aquivo .ipa. O driver do Simulator na classe MobileDriver ja esta configurado para executar.
+no Simulator ou Smartphone para instala-lo sem precisar gerar aquivo .ipa. O driver do Simulator na classe MobileDriver ja esta configurado para executar sem pedir para instalar o app a cada execucao.
 
 ###  - Plataforma
 *Importante:
@@ -73,7 +73,7 @@ Para visualizar as evidencias no documento pode usar o MS Office Word ou o Libre
 ###  - Inicializar a automação
 *Descricao:
 
-Execute o Appium.
+Execute o Appium e o WebDriverAgent no Xcode.
 
 Abrir uma das classes ***Test.java no Intellij Idea ou no Eclipse.
 
