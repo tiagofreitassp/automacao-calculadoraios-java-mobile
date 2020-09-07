@@ -1,5 +1,5 @@
 # automacao-calculadoraios-java-mobile
-Script de automacao de calculos basicos na calculadora do iOS usando Java, Selenium, Appium e jUnit.
+Script de automacao de calculos basicos na calculadora do iOS usando Java, Selenium, Appium e jUnit. Criado no Visual Studio 2019.
 
 ### Cobertura dos testes:  ###
 *Descricao: 
@@ -45,8 +45,7 @@ Mas deixei o codigo fonte (SimpleCalculator-master.zip) na pasta drivers/iOS cas
 
 E obrigatorio voce ter conhecimento sobre o Apple ID, WebDriverAgent, Node, Appium e dependencias no MacOS, são exigências para automação nas plataformas da Apple.
 
-Se o seu Apple ID nao tiver perfil de desenvolvedor da Apple, voce tera problemas ao gerar um arquivo .ipa, e instala-lo no aparelho, recomendo abrir o projeto do codigo fonte da calculadora no Xcode e abri-lo 
-no Simulator ou Smartphone para instala-lo sem precisar gerar o arquivo .ipa. O driver do Simulator na classe MobileDriver ja esta configurado para executar sem pedir para instalar o app a cada execucao.
+Se o seu Apple ID nao tiver perfil de desenvolvedor da Apple, voce tera problemas ao gerar um arquivo .ipa, e instala-lo no aparelho. Não é obrigatorio ter uma conta de desenvolvedor para realizar os testes automatizados, sema ele, apenas ira atrapalhar para gerar o instalador. Recomendo abrir o projeto do codigo fonte da calculadora no Xcode e abri-lo no Simulator ou Smartphone para instala-lo sem precisar gerar o arquivo .ipa. O driver do Simulator na classe MobileDriver ja esta configurado para executar sem pedir para instalar o app a cada execucao.
 
 ###  - Plataforma
 *Importante:
@@ -66,7 +65,7 @@ Nao e necessario criar massas.
 
 ###  - Evidencias
 *Descricao:
-Apos a execucao as imagens de evidencias sao armazenadas na pasta screenshots..
+Apos a execucao as imagens de evidencias sao armazenadas na pasta screenshots.
 
 Para visualizar as evidencias no documento pode usar o MS Office Word ou o LibreOffice
 
