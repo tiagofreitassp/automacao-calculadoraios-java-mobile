@@ -1,5 +1,5 @@
 # automacao-calculadoraios-java-mobile
-Script de automacao de calculos basicos na calculadora do iOS usando Java, Selenium, Appium e jUnit. Criado no Visual Studio 2019.
+Script de automacao de calculos basicos na calculadora do iOS usando Java, Selenium, Appium e jUnit. Criado no Intellij Idea.
 
 ### Cobertura dos testes:  ###
 *Descricao: 
@@ -41,7 +41,7 @@ Realizar calculos basicos na calculadora do iOS no smartphone.
 O app da calculadora do iOS utilizado para o teste deste projeto foi desenvolvido por terceiro e não por mim, caso execute com sucesso ou não, recomendo que após entender o código escrito, 
 instale outro arquivo do formato .ipa e adapte o projeto. 
 
-Mas deixei o codigo fonte (SimpleCalculator-master.zip) na pasta drivers/iOS caso tenha problemas com o BundleId, abra o codigo fonte e altere o BundleId na sua conta Apple ID.
+Mas deixei o codigo fonte (iOS12Calculator-master.zip) na pasta drivers/iOS caso tenha problemas com o BundleId, abra o codigo fonte e altere o BundleId na sua conta Apple ID.
 
 E obrigatorio voce ter conhecimento sobre o Apple ID, WebDriverAgent, Node, Appium e dependencias no MacOS, são exigências para automação nas plataformas da Apple.
 
@@ -77,3 +77,10 @@ Execute o Appium e o WebDriverAgent no Xcode.
 Abrir uma das classes ***Test.java no Intellij Idea ou no Eclipse.
 
 No caso para executar num smartphone, abra a classe Mobile Driver e altere o valor no campo "DeviceId".
+
+###  - App Calculadora
+*Descricao:
+
+O código fonte da calculadora foi obtida no link: https://github.com/mouredev/iOS12Calculator
+
+Entenda que como não foi desenvolvido por mim, caso ocorra algum problema nele, se souber programação no Swift fique a vontade para analisar o erro. Mas até o momento não ocorreu problemas, pode usar o arquivo zip.

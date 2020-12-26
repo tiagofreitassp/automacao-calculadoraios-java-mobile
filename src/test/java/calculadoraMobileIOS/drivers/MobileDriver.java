@@ -11,7 +11,7 @@ import java.net.URL;
 
 public class MobileDriver {
     protected static AppiumDriver<MobileElement>driver;
-    public String driverApp = "/Users/testador/Documents/Scripts programacao/XcodeProjects/Apps/SimpleCalculator.ipa";
+    public String driverApp = "";
 
     public AppiumDriver<MobileElement> getDriver() throws MalformedURLException {
         if(driver == null) {
@@ -34,8 +34,8 @@ public class MobileDriver {
             desiredCapabilities.setCapability("udid", "1ac1b2904df1922053361fdb6b3044d649e3d5fd");
             desiredCapabilities.setCapability("platformName", "iOS");
             desiredCapabilities.setCapability("deviceName", "TF-Testador");
-            desiredCapabilities.setCapability("platformVersion", "13.7");
-            desiredCapabilities.setCapability("bundleId", "com.TiagoFreitas.SimpleCalculator");
+            desiredCapabilities.setCapability("platformVersion", "14.3");
+            desiredCapabilities.setCapability("bundleId", "com.mouredev.iOS-Calculator");
             desiredCapabilities.setCapability("automationName", "XCUITest");
             //desiredCapabilities.setCapability("app", driverApp);
 
@@ -51,12 +51,12 @@ public class MobileDriver {
         try{
             DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
             //desiredCapabilities.setCapability("xcodeOrgId", xcodeOrgId);
-            desiredCapabilities.setCapability("xcodeSigningId", "iPhone 8");
-            desiredCapabilities.setCapability("udid", "C1671298-B5D4-48CD-B70A-BC1D8FF8324D");
+            desiredCapabilities.setCapability("xcodeSigningId", "iPhone SE (2nd generation)");
+            desiredCapabilities.setCapability("udid", "19236B15-42B3-4193-81C2-72F20C2A246E");
             desiredCapabilities.setCapability("platformName", "iOS");
-            desiredCapabilities.setCapability("deviceName", "iPhone 8");
-            desiredCapabilities.setCapability("platformVersion", "13.6");
-            desiredCapabilities.setCapability("bundleId", "com.TiagoFreitas.SimpleCalculator");
+            desiredCapabilities.setCapability("deviceName", "iPhone SE (2nd generation)");
+            desiredCapabilities.setCapability("platformVersion", "14.3");
+            desiredCapabilities.setCapability("bundleId", "com.mouredev.iOS-Calculator");
             desiredCapabilities.setCapability("automationName", "XCUITest");
             //desiredCapabilities.setCapability("app", driverApp);
 
@@ -70,7 +70,8 @@ public class MobileDriver {
 
     public void killDriver() {
         if(driver != null) {
-            driver.closeApp();
+            //driver.closeApp();
+            driver.quit();
         }
     }
 

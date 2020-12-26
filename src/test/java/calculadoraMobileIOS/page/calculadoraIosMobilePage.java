@@ -36,60 +36,67 @@ public class calculadoraIosMobilePage extends MobileDriver {
     public void soma() throws IOException, InterruptedException, InvalidFormatException {
         System.out.println("Soma");
         test.criarPastaEvidencia("Calc iOS - Soma");
+        page.clicar(By.id(btnC));
 
         page.clicar(By.id(btnDois));
         page.clicar(By.id(btnSoma));
         page.clicar(By.id(btnTres));
         test.gerarScreenshots("Soma1");
-        page.validarTexto(By.id(txtResultado),"5");
         page.clicar(By.id(btnIgual));
+        page.validarTexto(By.id(txtResultado),"5");
         test.gerarScreenshots("Soma2");
 
         page.esperar(1000);
+        page.clicar(By.id(btnC));
         test.gerarEvidenciaNoWord("Validar soma","1","Realizar uma soma");
     }
 
     public void subtrair() throws IOException, InterruptedException, InvalidFormatException {
         System.out.println("Subtracao");
         test.criarPastaEvidencia("Calc iOS - Subtracao");
+        page.clicar(By.id(btnC));
 
         page.clicar(By.id(btnNove));
         page.clicar(By.id(btnSubtrair));
         page.clicar(By.id(btnQuatro));
         test.gerarScreenshots("Subtracao1");
-        page.validarTexto(By.id(txtResultado),"5");
         page.clicar(By.id(btnIgual));
+        page.validarTexto(By.id(txtResultado),"5");
         test.gerarScreenshots("Subtracao2");
 
         page.esperar(1000);
+        page.clicar(By.id(btnC));
         test.gerarEvidenciaNoWord("Validar subtracao","2","Realizar uma subtracao");
     }
 
     public void multiplicar() throws InterruptedException, IOException, InvalidFormatException {
         System.out.println("Multiplicacao");
         test.criarPastaEvidencia("Calc iOS - Multiplicacao");
+        page.clicar(By.id(btnC));
 
         page.clicar(By.id(btnOito));
         page.clicar(By.id(btnMultiplicar));
         page.clicar(By.id(btnSete));
         test.gerarScreenshots("Multiplicacao1");
-        page.validarTexto(By.id(txtResultado),"56");
         page.clicar(By.id(btnIgual));
+        page.validarTexto(By.id(txtResultado),"56");
         test.gerarScreenshots("Multiplicacao2");
 
         page.esperar(1000);
+        page.clicar(By.id(btnC));
         test.gerarEvidenciaNoWord("Validar multiplicacao","3","Realizar uma multiplicacao");
     }
 
     public void dividir() throws IOException, InterruptedException, InvalidFormatException {
         System.out.println("Divisao");
         test.criarPastaEvidencia("Calc iOS - Divisao");
+        page.clicar(By.id(btnC));
 
         page.clicar(By.id(btnTres));
         page.clicar(By.id(btnDois));
         page.clicar(By.id(btnDivisao));
         page.clicar(By.id(btnZero));
-        page.validarTexto(By.id(txtResultado),"inf");
+        page.validarTexto(By.id(txtResultado),"0");
         test.gerarScreenshots("Divisao1");
 
         page.clicar(By.id(btnC));
@@ -98,11 +105,12 @@ public class calculadoraIosMobilePage extends MobileDriver {
         page.clicar(By.id(btnDois));
         page.clicar(By.id(btnDivisao));
         page.clicar(By.id(btnDois));
+        page.clicar(By.id(btnIgual));
         test.gerarScreenshots("Divisao2");
         page.validarTexto(By.id(txtResultado),"16");
-        page.clicar(By.id(btnIgual));
 
         page.esperar(1000);
+        page.clicar(By.id(btnC));
         test.gerarEvidenciaNoWord("Validar divisao","4","Realizar uma divisao");
     }
 }
