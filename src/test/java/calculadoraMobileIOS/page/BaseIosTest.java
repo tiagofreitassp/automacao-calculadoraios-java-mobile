@@ -21,12 +21,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class BaseIosTest extends MobileDriver {
+    private BaseIosPage page = new BaseIosPage();
     private static String nomePasta;
     private File pastaEvidencias;
 
     @After
     public void tearDown() throws Exception {
-        //geradorPDF.finishPdf();
         killDriver();
     }
 
@@ -47,7 +47,21 @@ public class BaseIosTest extends MobileDriver {
     public void gerarScreenshots(String nomeImagem) {
         File pWin = new File(pastaEvidencias + "\\" + nomeImagem + ".png");
         File pMac = new File(pastaEvidencias+"/"+nomeImagem+".png");
-        File evidencias = pMac;
+        File evidencias = null;
+
+        if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Mac OS X")){
+            evidencias = pMac;
+        }else if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Unix")){
+            evidencias = pMac;
+        }else if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Mac")){
+            evidencias = pMac;
+        }else if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Windows")){
+            evidencias = pWin;
+        }else if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Windows 10")){
+            evidencias = pWin;
+        }else if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Win")){
+            evidencias = pWin;
+        }
 
         try {
             TakesScreenshot ts = (TakesScreenshot)driver;
@@ -77,7 +91,7 @@ public class BaseIosTest extends MobileDriver {
 
         run2.addBreak();
         run2.addBreak();
-        run2.setText("3. EVID�NCIAS DOS CASOS DE TESTE");
+        run2.setText("3. EVIDENCIAS DOS CASOS DE TESTE");
         run2.setBold(true);
         run2.setFontSize(11);
         run2.setColor("595959");
@@ -88,7 +102,21 @@ public class BaseIosTest extends MobileDriver {
         for (String path : paths) {
             String pWin = pastaEvidencias + "\\" + path;
             String pMac = pastaEvidencias + "/" + path;
-            String evidencias = pMac;
+            String evidencias = null;
+
+            if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Mac OS X")){
+                evidencias = pMac;
+            }else if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Unix")){
+                evidencias = pMac;
+            }else if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Mac")){
+                evidencias = pMac;
+            }else if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Windows")){
+                evidencias = pWin;
+            }else if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Windows 10")){
+                evidencias = pWin;
+            }else if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Win")){
+                evidencias = pWin;
+            }
 
             String imagem = evidencias;
 
@@ -107,7 +135,21 @@ public class BaseIosTest extends MobileDriver {
 
             String dWin = pastaEvidencias + "\\" + "ID - " + id + " - " + titulo +".docx";;
             String dMac = pastaEvidencias + "/" + "ID - " + id + " - " + titulo +".docx";
-            String pDocumento = dMac;
+            String pDocumento = null;
+
+            if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Mac OS X")){
+                pDocumento = dMac;
+            }else if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Unix")){
+                pDocumento = dMac;
+            }else if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Mac")){
+                pDocumento = dMac;
+            }else if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Windows")){
+                pDocumento = dWin;
+            }else if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Windows 10")){
+                pDocumento = dWin;
+            }else if (page.obterNomeSistemaOperacional().equalsIgnoreCase("Win")){
+                pDocumento = dWin;
+            }
 
             String documento = pDocumento;
             FileOutputStream fos = new FileOutputStream(documento);

@@ -6,7 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.net.InetAddress;
 import java.net.MalformedURLException;
+import java.net.UnknownHostException;
 
 public class BaseIosPage extends MobileDriver {
     public WebDriverWait wait;
@@ -34,5 +36,27 @@ public class BaseIosPage extends MobileDriver {
 
     public void esperar(long temp) throws InterruptedException {
         Thread.sleep(temp);
+    }
+
+    public String obterNomeSistemaOperacional(){
+        String so = System.getProperty("os.name");
+        return so;
+    }
+
+    public String obterUsuarioLogado(){
+        String usuario = System.getProperty("user.name");
+        return usuario;
+    }
+
+    public String obterNumeroIP() throws UnknownHostException {
+        String ip = InetAddress.getLocalHost().getHostAddress();
+        //System.out.println("Numero IP: "+ip);
+        return ip;
+    }
+
+    public String obterNomaDaMaquina() throws UnknownHostException {
+        String hostName = InetAddress.getLocalHost().getHostName();
+        //System.out.println("Nome da maquina: "+hostName);
+        return hostName;
     }
 }

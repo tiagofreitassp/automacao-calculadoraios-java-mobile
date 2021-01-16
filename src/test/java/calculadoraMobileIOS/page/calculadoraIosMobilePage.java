@@ -39,12 +39,13 @@ public class calculadoraIosMobilePage extends MobileDriver {
         page.clicar(By.id(btnC));
 
         page.clicar(By.id(btnDois));
+        test.gerarScreenshots("1Soma");
         page.clicar(By.id(btnSoma));
         page.clicar(By.id(btnTres));
-        test.gerarScreenshots("Soma1");
+        test.gerarScreenshots("2Soma");
         page.clicar(By.id(btnIgual));
         page.validarTexto(By.id(txtResultado),"5");
-        test.gerarScreenshots("Soma2");
+        test.gerarScreenshots("3Soma");
 
         page.esperar(1000);
         page.clicar(By.id(btnC));
@@ -57,12 +58,13 @@ public class calculadoraIosMobilePage extends MobileDriver {
         page.clicar(By.id(btnC));
 
         page.clicar(By.id(btnNove));
+        test.gerarScreenshots("1Subtracao");
         page.clicar(By.id(btnSubtrair));
         page.clicar(By.id(btnQuatro));
-        test.gerarScreenshots("Subtracao1");
+        test.gerarScreenshots("2Subtracao");
         page.clicar(By.id(btnIgual));
         page.validarTexto(By.id(txtResultado),"5");
-        test.gerarScreenshots("Subtracao2");
+        test.gerarScreenshots("3Subtracao");
 
         page.esperar(1000);
         page.clicar(By.id(btnC));
@@ -75,12 +77,13 @@ public class calculadoraIosMobilePage extends MobileDriver {
         page.clicar(By.id(btnC));
 
         page.clicar(By.id(btnOito));
+        test.gerarScreenshots("1Multiplicacao");
         page.clicar(By.id(btnMultiplicar));
         page.clicar(By.id(btnSete));
-        test.gerarScreenshots("Multiplicacao1");
+        test.gerarScreenshots("2Multiplicacao");
         page.clicar(By.id(btnIgual));
         page.validarTexto(By.id(txtResultado),"56");
-        test.gerarScreenshots("Multiplicacao2");
+        test.gerarScreenshots("3Multiplicacao");
 
         page.esperar(1000);
         page.clicar(By.id(btnC));
@@ -97,16 +100,17 @@ public class calculadoraIosMobilePage extends MobileDriver {
         page.clicar(By.id(btnDivisao));
         page.clicar(By.id(btnZero));
         page.validarTexto(By.id(txtResultado),"0");
-        test.gerarScreenshots("Divisao1");
 
         page.clicar(By.id(btnC));
 
         page.clicar(By.id(btnTres));
         page.clicar(By.id(btnDois));
+        test.gerarScreenshots("1Divisao");
         page.clicar(By.id(btnDivisao));
         page.clicar(By.id(btnDois));
+        test.gerarScreenshots("2Divisao");
         page.clicar(By.id(btnIgual));
-        test.gerarScreenshots("Divisao2");
+        test.gerarScreenshots("3Divisao");
         page.validarTexto(By.id(txtResultado),"16");
 
         page.esperar(1000);

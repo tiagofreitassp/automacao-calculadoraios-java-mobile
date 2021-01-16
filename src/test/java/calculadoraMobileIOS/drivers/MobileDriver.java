@@ -77,6 +77,6 @@ public class MobileDriver {
 
     public static void versaoApp() {
         System.out.println("<<< Tiago Freitas - Versao: 1.3.070920 >>>");
-        System.out.println("<<< Versao da plataforma iOS: 13.6 >>>");
+        System.out.println("<<< Versao da plataforma iOS: 14.3 >>>");
     }
 }
