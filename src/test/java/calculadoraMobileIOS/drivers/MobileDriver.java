@@ -52,10 +52,10 @@ public class MobileDriver {
             DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
             //desiredCapabilities.setCapability("xcodeOrgId", xcodeOrgId);
             desiredCapabilities.setCapability("xcodeSigningId", "iPhone SE (2nd generation)");
-            desiredCapabilities.setCapability("udid", "19236B15-42B3-4193-81C2-72F20C2A246E");
+            desiredCapabilities.setCapability("udid", "1B86E7B3-45AA-4DFE-B5A4-446C8534D2E5");
             desiredCapabilities.setCapability("platformName", "iOS");
             desiredCapabilities.setCapability("deviceName", "iPhone SE (2nd generation)");
-            desiredCapabilities.setCapability("platformVersion", "14.3");
+            desiredCapabilities.setCapability("platformVersion", "14.5");
             desiredCapabilities.setCapability("bundleId", "com.mouredev.iOS-Calculator");
             desiredCapabilities.setCapability("automationName", "XCUITest");
             //desiredCapabilities.setCapability("app", driverApp);
@@ -76,7 +76,7 @@ public class MobileDriver {
     }
 
     public static void versaoApp() {
-        System.out.println("<<< Tiago Freitas - Versao: 1.3.070920 >>>");
-        System.out.println("<<< Versao da plataforma iOS: 14.3 >>>");
+        System.out.println("<<< Tiago Freitas - Versao: 1.3.120521 >>>");
+        System.out.println("<<< Versao da plataforma iOS: 14.5 >>>");
     }
 }
