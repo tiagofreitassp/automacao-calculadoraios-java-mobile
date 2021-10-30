@@ -9,17 +9,17 @@ Realizar calculos basicos na calculadora do iOS no emulador.
 Realizar calculos basicos na calculadora do iOS no smartphone.
 
 ## Tecnologias:
-* [Java Jdk 8](https://www.oracle.com/br/java/technologies/javase-downloads.html)
+* [Java JDK 8+](https://www.oracle.com/br/java/technologies/javase-downloads.html)
 * [Maven](https://maven.apache.org)
 * [Maven dependencias](https://mvnrepository.com)
 * [Appium](http://appium.io)
 * [Selenium](https://www.selenium.dev/projects/)
 * [Intellij Idea](https://www.jetbrains.com/pt-br/idea/)
-* [jUnit](https://junit.org/junit5/)
+* [jUnit 4](https://junit.org/junit4/)
 * [MacOS X](https://www.apple.com/br/macos/what-is/)
 * [Xcode](https://apps.apple.com/br/app/xcode/id497799835?mt=12)
 * [Node](https://nodejs.org/en/)
-* [WebDriverAgent](https://github.com/facebookarchive/WebDriverAgent)
+* [WebDriverAgent](https://github.com/appium/WebDriverAgent)
 * [iOS](https://www.apple.com/br/iphone/)
 * [Android Studio](https://developer.android.com/studio)
 
