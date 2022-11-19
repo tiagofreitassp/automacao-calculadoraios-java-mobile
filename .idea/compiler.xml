@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="automacao-calculadoraios-java-mobile" target="8" />
+      <module name="automacao-calculadoraios-java-mobile" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

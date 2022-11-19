@@ -51,11 +51,11 @@ public class MobileDriver {
         try{
             DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
             //desiredCapabilities.setCapability("xcodeOrgId", xcodeOrgId);
-            desiredCapabilities.setCapability("xcodeSigningId", "iPhone 13");
-            desiredCapabilities.setCapability("udid", "676B8A13-3F85-4959-A9C3-41124EBE1A79");
+            desiredCapabilities.setCapability("xcodeSigningId", "iPhone 14");
+            desiredCapabilities.setCapability("udid", "3F7A19AE-CF02-4732-B19B-3A54D3909EB8");
             desiredCapabilities.setCapability("platformName", "iOS");
-            desiredCapabilities.setCapability("deviceName", "iPhone 13");
-            desiredCapabilities.setCapability("platformVersion", "15.0");
+            desiredCapabilities.setCapability("deviceName", "iPhone 14");
+            desiredCapabilities.setCapability("platformVersion", "16.1");
             desiredCapabilities.setCapability("bundleId", "com.mouredev.iOS-Calculator");
             desiredCapabilities.setCapability("automationName", "XCUITest");
             //desiredCapabilities.setCapability("app", driverApp);
