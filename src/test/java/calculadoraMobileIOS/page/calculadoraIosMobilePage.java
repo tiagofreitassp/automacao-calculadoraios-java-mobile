@@ -10,33 +10,32 @@ public class calculadoraIosMobilePage extends MobileDriver {
     BaseIosTest test = new BaseIosTest();
     BaseIosPage page = new BaseIosPage();
 
-    private String btnC = "btnC";
-    private String btnMailMenos = "btnMailMenos";
-    private String btnPorcentagem = "btnPorcentagem";
-    private String btnDivisao = "btnDivisao";
-    private String btnSete = "btnSete";
-    private String btnOito = "btnOito";
-    private String btnNove = "btnNove";
-    private String btnQuatro = "btnQuatro";
-    private String btnCinco = "btnCinco";
-    private String btnSeis = "btnSeis";
-    private String btnUm = "btnUm";
-    private String btnDois = "btnDois";
-    private String btnTres = "btnTres";
-    private String btnZeroZero = "btnZeroZero";
+    private String btnAC = "btnAC";
+    private String btnMaisMenos = "btnPlusMinus";
+    private String btnPorcentagem = "btnPorc";
+    private String btnDivisao = "btnDiv";
+    private String btnSete = "btnSeven";
+    private String btnOito = "btnEight";
+    private String btnNove = "btnNine";
+    private String btnQuatro = "btnFour";
+    private String btnCinco = "btnFive";
+    private String btnSeis = "btnSix";
+    private String btnUm = "btnOne";
+    private String btnDois = "btnTwo";
+    private String btnTres = "btnThree";
     private String btnZero = "btnZero";
-    private String btnPonto = "btnPonto";
-    private String btnIgual = "btnIgual";
-    private String btnSoma = "btnAdicao";
-    private String btnSubtrair = "btnSubtracao";
-    private String btnMultiplicar = "btnMultiplicacao";
+    private String btnPonto = "btnDot";
+    private String btnIgual = "btnEqual";
+    private String btnSoma = "btnPlus";
+    private String btnSubtrair = "btnMinus";
+    private String btnMultiplicar = "btnMult";
 
-    private String txtResultado = "lblResultado";
+    private String txtResultado = "lblResult";
 
     public void soma() throws IOException, InterruptedException, InvalidFormatException {
         System.out.println("Soma");
         test.criarPastaEvidencia("Calc iOS - Soma");
-        page.clicar(By.id(btnC));
+        page.clicar(By.id(btnAC));
 
         page.clicar(By.id(btnDois));
         test.gerarScreenshots("1Soma");
@@ -48,14 +47,14 @@ public class calculadoraIosMobilePage extends MobileDriver {
         test.gerarScreenshots("3Soma");
 
         page.esperar(1000);
-        page.clicar(By.id(btnC));
+        page.clicar(By.id(btnAC));
         test.gerarEvidenciaNoWord("Validar soma","1","Realizar uma soma");
     }
 
     public void subtrair() throws IOException, InterruptedException, InvalidFormatException {
         System.out.println("Subtracao");
         test.criarPastaEvidencia("Calc iOS - Subtracao");
-        page.clicar(By.id(btnC));
+        page.clicar(By.id(btnAC));
 
         page.clicar(By.id(btnNove));
         test.gerarScreenshots("1Subtracao");
@@ -67,14 +66,14 @@ public class calculadoraIosMobilePage extends MobileDriver {
         test.gerarScreenshots("3Subtracao");
 
         page.esperar(1000);
-        page.clicar(By.id(btnC));
+        page.clicar(By.id(btnAC));
         test.gerarEvidenciaNoWord("Validar subtracao","2","Realizar uma subtracao");
     }
 
     public void multiplicar() throws InterruptedException, IOException, InvalidFormatException {
         System.out.println("Multiplicacao");
         test.criarPastaEvidencia("Calc iOS - Multiplicacao");
-        page.clicar(By.id(btnC));
+        page.clicar(By.id(btnAC));
 
         page.clicar(By.id(btnOito));
         test.gerarScreenshots("1Multiplicacao");
@@ -86,14 +85,14 @@ public class calculadoraIosMobilePage extends MobileDriver {
         test.gerarScreenshots("3Multiplicacao");
 
         page.esperar(1000);
-        page.clicar(By.id(btnC));
+        page.clicar(By.id(btnAC));
         test.gerarEvidenciaNoWord("Validar multiplicacao","3","Realizar uma multiplicacao");
     }
 
     public void dividir() throws IOException, InterruptedException, InvalidFormatException {
         System.out.println("Divisao");
         test.criarPastaEvidencia("Calc iOS - Divisao");
-        page.clicar(By.id(btnC));
+        page.clicar(By.id(btnAC));
 
         page.clicar(By.id(btnTres));
         page.clicar(By.id(btnDois));
@@ -101,7 +100,7 @@ public class calculadoraIosMobilePage extends MobileDriver {
         page.clicar(By.id(btnZero));
         page.validarTexto(By.id(txtResultado),"0");
 
-        page.clicar(By.id(btnC));
+        page.clicar(By.id(btnAC));
 
         page.clicar(By.id(btnTres));
         page.clicar(By.id(btnDois));
@@ -114,7 +113,7 @@ public class calculadoraIosMobilePage extends MobileDriver {
         page.validarTexto(By.id(txtResultado),"16");
 
         page.esperar(1000);
-        page.clicar(By.id(btnC));
+        page.clicar(By.id(btnAC));
         test.gerarEvidenciaNoWord("Validar divisao","4","Realizar uma divisao");
     }
 }
