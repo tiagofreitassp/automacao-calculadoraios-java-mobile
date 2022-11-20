@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.UnknownHostException;
+import java.time.Duration;
 
 public class BaseIosPage extends MobileDriver {
     public WebDriverWait wait;
@@ -30,7 +31,7 @@ public class BaseIosPage extends MobileDriver {
     }
 
     public void aguardarElemento(By by) {
-        wait = new WebDriverWait(driver, 15);
+        wait = new WebDriverWait(driver, Duration.ofMillis(15));
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 

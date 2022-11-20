@@ -2,7 +2,6 @@ package calculadoraMobileIOS.test;
 
 import calculadoraMobileIOS.page.BaseIosTest;
 import calculadoraMobileIOS.page.calculadoraIosMobilePage;
-import io.cucumber.java.Scenario;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.junit.Before;
 import org.junit.FixMethodOrder;

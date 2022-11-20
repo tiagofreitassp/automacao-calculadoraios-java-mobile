@@ -1,7 +1,6 @@
 package calculadoraMobileIOS.drivers;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.ios.IOSDriver;
 import org.junit.Before;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -10,10 +9,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class MobileDriver {
-    protected static AppiumDriver<MobileElement>driver;
+    protected static AppiumDriver driver;
     public String driverApp = "";
 
-    public AppiumDriver<MobileElement> getDriver() throws MalformedURLException {
+    public AppiumDriver getDriver() throws MalformedURLException {
         if(driver == null) {
             criarDriver();
         }
