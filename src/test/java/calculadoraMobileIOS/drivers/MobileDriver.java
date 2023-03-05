@@ -51,7 +51,7 @@ public class MobileDriver {
             DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
             //desiredCapabilities.setCapability("xcodeOrgId", xcodeOrgId);
             desiredCapabilities.setCapability("xcodeSigningId", "iPhone 14");
-            desiredCapabilities.setCapability("udid", "3F7A19AE-CF02-4732-B19B-3A54D3909EB8");
+            desiredCapabilities.setCapability("udid", "D9D07F3B-5A08-4F4E-B925-56C72884555E");
             desiredCapabilities.setCapability("platformName", "iOS");
             desiredCapabilities.setCapability("deviceName", "iPhone 14");
             desiredCapabilities.setCapability("platformVersion", "16.1");
