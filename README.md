@@ -12,7 +12,7 @@ Realizar calculos basicos na calculadora do iOS no smartphone.
 * [Java JDK 8+](https://www.oracle.com/br/java/technologies/javase-downloads.html)
 * [Maven](https://maven.apache.org)
 * [Maven dependencias](https://mvnrepository.com)
-* [Appium](http://appium.io)
+* [Appium 2+](http://appium.io)
 * [Selenium](https://www.selenium.dev/projects/)
 * [Intellij Idea](https://www.jetbrains.com/pt-br/idea/)
 * [jUnit 4](https://junit.org/junit4/)
@@ -46,6 +46,8 @@ Mas deixei o codigo fonte (iOS12Calculator-master.zip) na pasta drivers/iOS caso
 E obrigatorio voce ter conhecimento sobre o Apple ID, WebDriverAgent, Node, Appium e dependencias no MacOS, são exigências para automação nas plataformas da Apple.
 
 Se o seu Apple ID nao tiver perfil de desenvolvedor da Apple, voce tera problemas ao gerar um arquivo .ipa, e instala-lo no aparelho. Não é obrigatorio ter uma conta de desenvolvedor para realizar os testes automatizados, sem ele, apenas ira atrapalhar para gerar o instalador. Recomendo abrir o projeto do codigo fonte da calculadora no Xcode e abri-lo no Simulator ou Smartphone para instala-lo sem precisar gerar o arquivo .ipa. O driver do Simulator na classe MobileDriver ja esta configurado para executar sem pedir para instalar o app a cada execucao.
+
+Utilize a versão 2 do Appim, pois as anteriores foram depreciadas e não possuem suporte do Desenvolvedor.
 
 ###  - Plataforma
 *Importante:

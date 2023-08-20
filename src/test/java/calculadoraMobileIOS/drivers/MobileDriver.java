@@ -38,7 +38,7 @@ public class MobileDriver {
             desiredCapabilities.setCapability("automationName", "XCUITest");
             //desiredCapabilities.setCapability("app", driverApp);
 
-            URL remoteUrl = new URL("http://localhost:4723/wd/hub");
+            URL remoteUrl = new URL("http://localhost:4723/");
 
             driver = new IOSDriver(remoteUrl, desiredCapabilities);
         }catch (Exception e){
@@ -59,7 +59,7 @@ public class MobileDriver {
             desiredCapabilities.setCapability("automationName", "XCUITest");
             //desiredCapabilities.setCapability("app", driverApp);
 
-            URL remoteUrl = new URL("http://localhost:4723/wd/hub");
+            URL remoteUrl = new URL("http://localhost:4723/");
 
             driver = new IOSDriver(remoteUrl, desiredCapabilities);
         }catch (Exception e){
@@ -75,7 +75,7 @@ public class MobileDriver {
     }
 
     public static void versaoApp() {
-        System.out.println("<<< Tiago Freitas - Versao: 1.4.201122 >>>");
+        System.out.println("<<< Tiago Freitas - Versao: 1.4.200823 >>>");
         System.out.println("<<< Versao da plataforma iOS: 16.1 >>>");
     }
 }
