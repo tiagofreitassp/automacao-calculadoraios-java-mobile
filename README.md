@@ -47,7 +47,7 @@ E obrigatorio voce ter conhecimento sobre o Apple ID, WebDriverAgent, Node, Appi
 
 Se o seu Apple ID nao tiver perfil de desenvolvedor da Apple, voce tera problemas ao gerar um arquivo .ipa, e instala-lo no aparelho. Não é obrigatorio ter uma conta de desenvolvedor para realizar os testes automatizados, sem ele, apenas ira atrapalhar para gerar o instalador. Recomendo abrir o projeto do codigo fonte da calculadora no Xcode e abri-lo no Simulator ou Smartphone para instala-lo sem precisar gerar o arquivo .ipa. O driver do Simulator na classe MobileDriver ja esta configurado para executar sem pedir para instalar o app a cada execucao.
 
-Utilize a versão 2 do Appim, pois as anteriores foram depreciadas e não possuem suporte do Desenvolvedor.
+Utilize a versão 2 do Appium, pois as anteriores foram depreciadas e não possuem suporte do Desenvolvedor.
 
 ###  - Plataforma
 *Importante:
