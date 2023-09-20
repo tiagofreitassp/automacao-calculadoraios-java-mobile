@@ -50,11 +50,11 @@ public class MobileDriver {
         try{
             DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
             //desiredCapabilities.setCapability("xcodeOrgId", xcodeOrgId);
-            desiredCapabilities.setCapability("xcodeSigningId", "iPhone 14");
-            desiredCapabilities.setCapability("udid", "D9D07F3B-5A08-4F4E-B925-56C72884555E");
+            desiredCapabilities.setCapability("xcodeSigningId", "iPhone 15");
+            desiredCapabilities.setCapability("udid", "FAE45065-D105-4ADA-9BFC-D9E95DBEFB07");
             desiredCapabilities.setCapability("platformName", "iOS");
-            desiredCapabilities.setCapability("deviceName", "iPhone 14");
-            desiredCapabilities.setCapability("platformVersion", "16.1");
+            desiredCapabilities.setCapability("deviceName", "iPhone 15");
+            desiredCapabilities.setCapability("platformVersion", "17.0");
             desiredCapabilities.setCapability("bundleId", "com.mouredev.iOS-Calculator");
             desiredCapabilities.setCapability("automationName", "XCUITest");
             //desiredCapabilities.setCapability("app", driverApp);
