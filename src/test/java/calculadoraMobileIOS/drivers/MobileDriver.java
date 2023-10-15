@@ -51,7 +51,7 @@ public class MobileDriver {
             DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
             //desiredCapabilities.setCapability("xcodeOrgId", xcodeOrgId);
             desiredCapabilities.setCapability("xcodeSigningId", "iPhone 15");
-            desiredCapabilities.setCapability("udid", "FAE45065-D105-4ADA-9BFC-D9E95DBEFB07");
+            desiredCapabilities.setCapability("udid", "A4EAE15D-1507-40A9-8B4D-96F007852E68");
             desiredCapabilities.setCapability("platformName", "iOS");
             desiredCapabilities.setCapability("deviceName", "iPhone 15");
             desiredCapabilities.setCapability("platformVersion", "17.0");
