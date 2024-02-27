@@ -1,8 +1,12 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+DS_Store
 .DS_Store
 /DS_Store
 /.DS_Store
 .screenshots
 ./screenshots
+/.evidencias/.DS_Store
+.evidencias/.DS_Store
+evidencias/.DS_Store
