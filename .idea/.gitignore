@@ -10,3 +10,5 @@ DS_Store
 /.evidencias/.DS_Store
 .evidencias/.DS_Store
 evidencias/.DS_Store
+target
+./target
